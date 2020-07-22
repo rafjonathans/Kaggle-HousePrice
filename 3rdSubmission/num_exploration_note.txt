@@ -1,0 +1,53 @@
+Drop:
+Id
+YearBuilt
+YearRemodAdd
+BsmtFinSF1 = Better to use TotalBsmtSF
+BsmtFinSF2 = Better to use TotalBsmtSF
+2ndFlrSF = Most value 0, better to use total value GrLivArea
+LowQualFinSF = most value 0
+BedroomAboveGr = Use TotRmsAbvGrd
+GarageYrBlt
+GarageCars = Better use garagearea
+GarageQual = Too thin
+GarageCond = Too thin
+PoolArea
+MiscVal
+
+Transform:
+LotFrontage
+LotArea = Kurtosis too thin
+OverallQual = Possible to transform
+OverallCond = Possible to transform
+GarageArea
+MoSold
+YrSold
+
+Leave as it is:
+ExterQuall = bimodal
+ExterCond = Kurtosis too thin
+BsmtQual = Multimodal
+BsmtCond = Kurtosis too thin
+BsmtUnfSF
+TotalBsmtSF
+HeatingQC
+1stFlrSF
+GrLivArea
+KitchenQual = Log tranform might be usefull
+TotRmsAbvGrd
+
+OneHot: (have it or not)
+MasVnrArea
+KitchenAbove
+Fireplace
+WoodDeckSF
+Merge1st	OpenPorchSF
+		EnclosedPorch
+		3SsnPorch
+		ScreenPorch
+
+Merge: 
+1	BsmtFullBath
+	BsmtHalfBath
+	FullBath
+	HalfBath
